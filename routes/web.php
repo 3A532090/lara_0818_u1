@@ -24,3 +24,4 @@ Route::auth();
 Route::get('/home', function () {
     return view('home');
 });
+Route::get('mail','MailController@getSend');
