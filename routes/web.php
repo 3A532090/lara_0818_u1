@@ -16,6 +16,10 @@ Route::get('/', function () {
     return view('welcome');
 })->middleware(CheckAge::class);
 
+Route::get('/tracy', function () {
+    throw new \Exception('Tracy works!');
+});
+
 Route::auth();
 Route::get('/home', function () {
     return view('home');
