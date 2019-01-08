@@ -80,8 +80,9 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title m-b-md visible-print">
                     Laravel
+                    {!! QrCode::size(110)->color(99,99,99)->generate(Request::url('/')); !!}
                 </div>
 
                 <div class="links">

@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    throw new \Exception('Tracy works!');
+    //throw new \Exception('Tracy works!');
     return view('welcome');
 });
 
